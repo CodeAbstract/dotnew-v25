@@ -7,12 +7,14 @@ export default function Home() {
       {/* Header/Navigation */}
       <header className="relative z-10 bg-white">
         <nav className="container mx-auto px-6 py-8 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-4 h-4 bg-[#0066FF]"></div>
-            <span className="text-xl font-bold text-gray-900">New Aguda</span>
-          </div>
-          <div className="hidden md:block text-sm text-gray-600">
-            <span className="tracking-wider">/ SOFTWARE ENGINEER | RUBY ON RAILS | E-COMMERCE | AGILE</span>
+          <div className="flex items-center">
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-[#0066FF]"></div>
+              <span className="text-xl font-bold text-gray-900">New Aguda</span>
+            </div>
+            <div className="hidden md:block text-sm text-gray-600 ml-4">
+              <span className="tracking-wider">/ SOFTWARE ENGINEER | RUBY ON RAILS | E-COMMERCE | AGILE</span>
+            </div>
           </div>
           <div className="flex items-center space-x-8">
             <Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm font-medium">ABOUT ME</Link>
@@ -27,8 +29,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/dotnew-bg-mac-coffee-camera.jpg"
-            alt="Workspace with MacBook, coffee, and camera"
+            src="/dotnew-bg-mac-coffee-sun.jpg"
+            alt="Workspace with MacBook, coffee, and sunlight"
             fill
             priority
             className="object-cover opacity-[0.6]"
@@ -38,7 +40,7 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 items-center max-w-6xl mx-auto">
             {/* Profile Card */}
-            <div className="bg-white/95 backdrop-blur-sm p-10 md:p-12 shadow-sm max-w-3xl mx-auto md:ml-auto">
+            <div className="bg-white/95 backdrop-blur-sm px-20 py-16 md:px-20 md:py-16 shadow-sm max-w-[32rem] mx-auto md:ml-auto">
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-48 h-48 mb-8">
                   <Image
@@ -74,17 +76,15 @@ export default function Home() {
 
             {/* Content Section */}
             <div className="space-y-6 md:pl-0 mx-auto md:mr-auto">
-              <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-900 drop-shadow-xl">
+              <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-900 drop-shadow-xl [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
                 Bonjour!
               </h1>
               <div className="space-y-4 text-lg">
-                <p className="leading-relaxed text-gray-800 drop-shadow font-semibold">
-                  A seasoned software engineer with over a decade of experience in developing web 
-                  applications for small, medium, and enterprise-level clients.
+                <p className="leading-relaxed text-gray-800 drop-shadow font-semibold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
+                  I'm a seasoned software engineer with over a decade of experience in developing web applications across diverse client scales - from small businesses to enterprise-level organizations.
                 </p>
-                <p className="leading-relaxed text-gray-800 drop-shadow font-semibold">
-                  My primary tool of trade is Ruby on Rails, complemented by expertise in front-end 
-                  development using React and Angular.
+                <p className="leading-relaxed text-gray-800 drop-shadow font-semibold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
+                  Ruby on Rails forms the foundation of my technical expertise, where I've built robust, scalable backend systems. My engineering toolkit extends to modern frontend development, with specialized proficiency in React and Angular frameworks.
                 </p>
               </div>
             </div>

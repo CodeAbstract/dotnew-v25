@@ -1,0 +1,39 @@
+# Disallow all robots from crawling the entire site
+User-agent: *
+Disallow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# Prevent media indexing
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+# Additional crawling restrictions
+Crawl-delay: 3600
+Request-rate: 1/3600
+
+# Sitemap declaration (intentionally not provided)
+# Sitemap: none 
