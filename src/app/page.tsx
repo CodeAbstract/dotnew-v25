@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import TypewriterText from './components/TypewriterText';
 
 export default function Home() {
   const pathname = usePathname();
@@ -93,12 +94,20 @@ export default function Home() {
               </h1>
               <div className="bg-white/3 backdrop-blur-sm px-8 py-10">
                 <div className="space-y-4 text-lg">
-                  <p className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]">
-                    I'm a seasoned software engineer with over a decade of experience in developing web applications across diverse client scales - from small businesses to enterprise-level organizations.
-                  </p>
-                  <p className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]">
-                    Ruby on Rails forms the foundation of my technical expertise, where I've built robust, scalable backend systems. My engineering toolkit extends to modern frontend development, with specialized proficiency in React and Angular frameworks.
-                  </p>
+                  <TypewriterText 
+                    text="I'm a seasoned software engineer with over a decade of experience in developing web applications across diverse client scales - from small businesses to enterprise-level organizations."
+                    delay={10}
+                    startDelay={100}
+                    className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]"
+                    as="p"
+                  />
+                  <TypewriterText 
+                    text="Ruby on Rails forms the foundation of my technical expertise, where I've built robust, scalable backend systems. My engineering toolkit extends to modern frontend development, with specialized proficiency in React and Angular frameworks."
+                    delay={10}
+                    startDelay={1600}
+                    className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]"
+                    as="p"
+                  />
                 </div>
               </div>
             </div>
