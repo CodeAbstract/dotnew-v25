@@ -1,7 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Home() {
+  const pathname = usePathname();
+  
   return (
     <div className="relative min-h-screen bg-white overflow-hidden">
       {/* Header/Navigation */}
@@ -17,7 +22,14 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center space-x-8">
-            <Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm font-medium">ABOUT ME</Link>
+            <Link 
+              href="/" 
+              className={`text-gray-600 hover:text-gray-900 text-sm font-medium border-b-2 ${
+                pathname === '/' ? 'border-[#0066FF]' : 'border-transparent'
+              }`}
+            >
+              ABOUT ME
+            </Link>
             <Link href="/projects" className="text-gray-600 hover:text-gray-900 text-sm font-medium">PROJECTS</Link>
             <Link href="/contact" className="text-gray-600 hover:text-gray-900 text-sm font-medium">CONTACT</Link>
           </div>
@@ -29,26 +41,26 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/dotnew-bg-mac-coffee-sun.jpg"
-            alt="Workspace with MacBook, coffee, and sunlight"
+            src="/dotnew-bg-mac-coffee-camera.jpg"
+            alt="Workspace with MacBook, coffee, and camera"
             fill
             priority
-            className="object-cover opacity-[0.6]"
+            className="object-cover opacity-[0.75]"
           />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 items-center max-w-6xl mx-auto">
             {/* Profile Card */}
-            <div className="bg-white/95 backdrop-blur-sm px-20 py-16 md:px-20 md:py-16 shadow-sm max-w-[32rem] mx-auto md:ml-auto">
+            <div className="bg-white/95 backdrop-blur-sm px-20 py-16 md:px-20 md:py-16 shadow-lg max-w-[32rem] mx-auto md:ml-auto">
               <div className="flex flex-col items-center text-center">
-                <div className="relative w-48 h-48 mb-8">
+                <div className="relative w-48 h-48 mb-8 shadow-xl rounded-full">
                   <Image
                     src="/AvatarPro2023-resizedSq.JPG"
                     alt="New Aguda"
                     fill
                     priority
-                    className="object-cover rounded-full"
+                    className="object-cover rounded-full shadow-lg ring-2 ring-white/50"
                   />
                 </div>
                 <h2 className="text-3xl font-bold mb-3 text-gray-900">New Aguda</h2>
@@ -76,16 +88,18 @@ export default function Home() {
 
             {/* Content Section */}
             <div className="space-y-6 md:pl-0 mx-auto md:mr-auto">
-              <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-900 drop-shadow-xl [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
+              <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-100 [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)] px-8">
                 Bonjour!
               </h1>
-              <div className="space-y-4 text-lg">
-                <p className="leading-relaxed text-gray-800 drop-shadow font-semibold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
-                  I'm a seasoned software engineer with over a decade of experience in developing web applications across diverse client scales - from small businesses to enterprise-level organizations.
-                </p>
-                <p className="leading-relaxed text-gray-800 drop-shadow font-semibold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
-                  Ruby on Rails forms the foundation of my technical expertise, where I've built robust, scalable backend systems. My engineering toolkit extends to modern frontend development, with specialized proficiency in React and Angular frameworks.
-                </p>
+              <div className="bg-white/3 backdrop-blur-sm px-8 py-10">
+                <div className="space-y-4 text-lg">
+                  <p className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]">
+                    I'm a seasoned software engineer with over a decade of experience in developing web applications across diverse client scales - from small businesses to enterprise-level organizations.
+                  </p>
+                  <p className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]">
+                    Ruby on Rails forms the foundation of my technical expertise, where I've built robust, scalable backend systems. My engineering toolkit extends to modern frontend development, with specialized proficiency in React and Angular frameworks.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
