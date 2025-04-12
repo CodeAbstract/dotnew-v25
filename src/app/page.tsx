@@ -41,8 +41,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/dotnew-bg-mac-coffee-sun.jpg"
-            alt="Workspace with MacBook, coffee, and sunlight"
+            src="/dotnew-bg-mac-coffee-camera.jpg"
+            alt="Workspace with MacBook, coffee, and camera"
             fill
             priority
             className="object-cover opacity-[0.75]"
