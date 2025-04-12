@@ -1,3 +1,50 @@
+# Portfolio - DotNew.me
+
+## Overview
+My portfolio website built using cutting-edge technologies to showcase projects, skills, and creativity.
+
+---
+
+## Frontend Technologies
+- **React.js**: Utilized for building a dynamic, component-based user interface.
+- **Next.js**: Enables server-side rendering, optimized routing, and improved SEO.
+- **Framer Motion**: Adds smooth animations and transitions, inspired by designs like dotnew.me.
+- **Tailwind CSS**: Used for rapid styling with utility classes while ensuring design consistency.
+- **TypeScript**: Provides type safety and better code organization.
+
+---
+
+## Backend Technologies
+- **Node.js with Express**: Implements a lightweight backend to manage API routes efficiently.
+- **MongoDB**: Stores project data, blog posts, and form submissions securely and reliably.
+
+---
+
+## Deployment & Infrastructure
+- **Vercel**: Ideal for deploying the Next.js application, offering preview environments for seamless development.
+- **GitHub Actions**: Automates CI/CD pipelines for streamlined testing and deployment workflows.
+
+---
+
+## Key Features
+1. **Smooth Page Transitions**: Achieved with Next.js and Framer Motion for a polished browsing experience.
+2. **Dynamic Project Cards**: Interactive and filterable cards to display portfolio projects.
+3. **Dark/Light Mode Toggle**: Easily integrated using Tailwind's dark mode and React context.
+4. **Contact Form**: Built with a simple API route in Next.js for form submissions.
+5. **Responsive Design**: Ensures compatibility across all device sizes, offering a user-friendly interface.
+
+---
+
+## Implementation Details
+
+### Setting Up the Project
+Create the Next.js app using the App Router:
+
+```bash
+npx create-next-app@latest dotnew-v25 --typescript --tailwind --eslint
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
