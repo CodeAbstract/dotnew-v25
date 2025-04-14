@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   other: {
     'X-Robots-Tag': 'noindex, nofollow, noarchive, nosnippet, notranslate, noimageindex',
   },
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +39,7 @@ export default function RootLayout({
       <head>
         <meta name="robots" content="noindex,nofollow,noarchive,nositelinkssearchbox,nosnippet,notranslate,noimageindex" />
         <meta name="googlebot" content="noindex,nofollow,noarchive,nositelinkssearchbox,nosnippet,notranslate,noimageindex" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
         <main className="min-h-screen flex flex-col">
