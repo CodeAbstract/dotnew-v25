@@ -11,17 +11,17 @@ const projects = [
   {
     id: 'digital-canvas',
     title: 'Digital and Canvas E-Commerce',
-    role: 'E-Commerce Developer - Personal',
+    role: 'E-Commerce Developer',
     techStack: 'Shopify E-Commerce',
-    description: 'My personal E-Commerce store built on Shopify, features landscape photographs and paintings that capture the beauty of nature in all its glory.',
+    description: 'My Shopify-based e-commerce store showcases stunning landscape photographs and paintings that celebrate the breathtaking beauty of nature in all its glory.',
     image: '/aindustries-preview-4x3.jpeg'
   },
   {
     id: 'solar-solutions',
     title: 'Solar Solutions and Services',
-    role: 'E-Commerce Consultant and Developer / Digital Marketing Specialist - Freelance',
+    role: 'E-Commerce Developer & Digital Marketing Specialist',
     techStack: 'Squarespace E-Commerce',
-    description: 'An Australian based company dedicated to making a positive environmental and social impact. They provide high-quality, cost-effective solutions that empower their clients to succeed.',
+    description: 'An Australian solar solutions company devoted to driving environmental sustainability and social progress by delivering innovative, cost-effective solar energy solutions that empower clients to thrive.',
     image: '/solar-solutions-preview-4x3.jpeg'
   },
   {
@@ -29,15 +29,15 @@ const projects = [
     title: 'E-Commerce System',
     role: 'Full-Stack Developer',
     techStack: 'Adobe Commerce | Ruby on Rails | PostgreSQL | EmberJS | AWS',
-    description: 'A service that enables the client to conduct online sales. It includes components such as an online storefront, product catalog and shopping cart. Using Magento Rest APIs to automate products listings export; order and inventory management are handled by the client\'s ERP SaaS platform.',
+    description: 'A service designed to facilitate online sales for clients, featuring key components such as an online storefront, product catalog, and shopping cart. It leverages Magento Rest APIs to automate product listing exports, while order and inventory management are seamlessly integrated with the client\'s ERP SaaS platform.',
     image: '/bcc-preview-4x3.jpeg'
   },
   {
     id: 'movie-database',
     title: 'Movie Database Application',
-    role: 'Full-Stack Developer - Personal',
-    techStack: 'ReactJS | Node.JS | Cursor AI | Claude-3.5 Sonnet',
-    description: 'Built with AI in mind using the power of Cursor AI + claude-3.5 sonnet, this platform highlights Featured Movies that deserve the spotlight, showcases the Top 5 Weekly Picks to keep you in the loop, and unveils the Top 20 Monthly Rankings to celebrate the biggest hits.',
+    role: 'Full-Stack Developer',
+    techStack: 'ReactJS | NodeJS | Cursor AI | Claude-3.5 Sonnet | Vercel',
+    description: 'This cinematic discovery platform, engineered with advanced AI collaboration via Cursor AI and Claude 3.5 Sonnet, spotlights deserving Featured Films, delivers essential Weekly Top 5 selections, and compiles definitive Monthly Top 20 Rankings—all designed to elevate your film exploration experience.',
     image: '/rradar-preview-4x3.jpeg'
   },
   {
@@ -59,18 +59,21 @@ const projects = [
   {
     id: 'payment-system',
     title: 'Online Payment System',
+    techStack: 'JRuby | Rails | MariaDB | AngularJS | Asterisk',
     description: 'A service that allows friends and family to make deposits to user\'s account. Deposits are made via the following methods: Credit card, phone call interactive voice response and facility lobby kiosks.',
     image: '/gp-preview-4x3.jpeg'
   },
   {
     id: 'admin-hub',
     title: 'Cloud-based Admin Hub',
+    techStack: 'JRuby | Rails | MariaDB | ReactJS | ElasticSearch',
     description: 'An application that provides a single user interface for administration of various services. Integrated within a SaaS platform for a US based company that provides communication services and solutions for incarcerated individuals and their loved ones.',
     image: '/ada-preview-4x3.jpeg'
   },
   {
     id: 'health-prediction',
     title: 'Employee Health Prediction',
+    techStack: 'Ruby on Rails | PostgreSQL | Angular | AWS',
     description: 'A machine learning-powered occupational health solution designed to predict a candidate\'s fitness. It uses a health questionnaire and sophisticated algorithms to predict outcomes with 88-92% accuracy. This tool helps organizations manage hiring speeds and costs effectively. Integrated within an occupational health SaaS platform.',
     image: '/ehp-preview-4x3.jpeg'
   }
@@ -122,19 +125,24 @@ export default function Projects() {
           <div className="flex items-center space-x-8">
             <Link 
               href="/" 
-              className="text-gray-600 hover:text-gray-900 text-sm font-medium"
+              className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
             >
               ABOUT
             </Link>
             <Link 
               href="/projects" 
-              className={`text-gray-600 hover:text-gray-900 text-sm font-medium border-b-2 ${
-                pathname === '/projects' ? 'border-[#0066FF]' : 'border-transparent'
+              className={`text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium ${
+                pathname === '/projects' ? 'line-through decoration-[#0066FF] decoration-2' : ''
               }`}
             >
               PROJECTS
             </Link>
-            <Link href="https://dotnew.me/" className="text-gray-600 hover:text-gray-900 text-sm font-medium">CONTACT</Link>
+            <Link 
+              href="https://dotnew.me/" 
+              className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
+            >
+              CONTACT
+            </Link>
           </div>
         </nav>
       </header>

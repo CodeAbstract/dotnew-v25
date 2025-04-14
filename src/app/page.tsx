@@ -25,14 +25,24 @@ export default function Home() {
           <div className="flex items-center space-x-8">
             <Link 
               href="/" 
-              className={`text-gray-600 hover:text-gray-900 text-sm font-medium border-b-2 ${
-                pathname === '/' ? 'border-[#0066FF]' : 'border-transparent'
+              className={`text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium ${
+                pathname === '/' ? 'line-through decoration-[#0066FF] decoration-2' : ''
               }`}
             >
               ABOUT
             </Link>
-            <Link href="/projects" className="text-gray-600 hover:text-gray-900 text-sm font-medium">PROJECTS</Link>
-            <Link href="https://dotnew.me/" className="text-gray-600 hover:text-gray-900 text-sm font-medium">CONTACT</Link>
+            <Link 
+              href="/projects" 
+              className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
+            >
+              PROJECTS
+            </Link>
+            <Link 
+              href="https://dotnew.me/" 
+              className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
+            >
+              CONTACT
+            </Link>
           </div>
         </nav>
       </header>
@@ -113,14 +123,14 @@ export default function Home() {
                     text="I'm a seasoned software engineer with over a decade of experience in developing web applications across diverse client scales - from small businesses to enterprise-level organizations."
                     delay={10}
                     startDelay={100}
-                    className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]"
+                    className="leading-relaxed text-gray-100 tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]"
                     as="p"
                   />
                   <TypewriterText 
                     text="Ruby on Rails forms the foundation of my technical expertise, where I've built robust, scalable backend systems. My engineering toolkit extends to modern frontend development, with specialized proficiency in React and Angular frameworks."
                     delay={10}
                     startDelay={1600}
-                    className="leading-relaxed text-gray-100 font-bold tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]"
+                    className="leading-relaxed text-gray-100 tracking-wide [text-shadow:_2px_2px_2px_rgb(0_0_0_/_50%)]"
                     as="p"
                   />
                 </div>
