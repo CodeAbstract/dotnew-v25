@@ -38,7 +38,7 @@ export default function Home() {
               PROJECTS
             </Link>
             <Link 
-              href="https://dotnew.me/" 
+              href="/contact" 
               className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
             >
               CONTACT

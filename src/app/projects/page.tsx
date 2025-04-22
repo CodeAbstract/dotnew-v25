@@ -138,7 +138,7 @@ export default function Projects() {
               PROJECTS
             </Link>
             <Link 
-              href="https://dotnew.me/" 
+              href="/contact" 
               className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
             >
               CONTACT
@@ -167,7 +167,7 @@ export default function Projects() {
         
         <div className="relative z-10">
           <motion.div 
-            className="container mx-auto px-6 py-16"
+            className="container mx-auto px-6 py-8"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
