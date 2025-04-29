@@ -19,7 +19,18 @@ My portfolio website built using cutting-edge technologies to showcase projects,
 
 ## Backend Technologies
 - **Node.js with Express**: Implements a lightweight backend to manage API routes efficiently.
-- **MongoDB**: Stores project data, blog posts, and form submissions securely and reliably.
+- **MongoDB**: [TODO] Stores project data, blog posts, and form submissions securely and reliably.
+
+---
+
+## Versions
+React 18.2.0
+Next.js 14.1.0
+Framer Motion 12.6.5 (for animations)
+TypeScript 5.x
+ESLint 8.x with Next.js config
+TailwindCSS 3.3.x for styling
+PostCSS and Autoprefixer for CSS processing
 
 ---
 
@@ -32,8 +43,8 @@ My portfolio website built using cutting-edge technologies to showcase projects,
 ## Key Features
 1. **Smooth Page Transitions**: Achieved with Next.js and Framer Motion for a polished browsing experience.
 2. **Dynamic Project Cards**: Interactive and filterable cards to display portfolio projects.
-3. **Dark/Light Mode Toggle**: Easily integrated using Tailwind's dark mode and React context.
-4. **Contact Form**: Built with a simple API route in Next.js for form submissions.
+3. **Dark/Light Mode Toggle**: [TODO] Easily integrated using Tailwind's dark mode and React context.
+4. **Contact Form**: [WIP] Built with a simple API route in Next.js for form submissions.
 5. **Responsive Design**: Ensures compatibility across all device sizes, offering a user-friendly interface.
 
 ---
