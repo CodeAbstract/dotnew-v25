@@ -24,13 +24,13 @@ My portfolio website built using cutting-edge technologies to showcase projects,
 ---
 
 ## Versions
-React 18.2.0
-Next.js 14.1.0
-Framer Motion 12.6.5 (for animations)
-TypeScript 5.x
-ESLint 8.x with Next.js config
-TailwindCSS 3.3.x for styling
-PostCSS and Autoprefixer for CSS processing
+- **React 18.2.0
+- **Next.js 14.1.0
+- **Framer Motion 12.6.5 (for animations)
+- **TypeScript 5.x
+- **ESLint 8.x with Next.js config
+- **TailwindCSS 3.3.x for styling
+- **PostCSS and Autoprefixer for CSS processing
 
 ---
 
