@@ -1,3 +1,6 @@
+<img width="1368" alt="dotNewV25Portfolio" src="https://github.com/user-attachments/assets/00e3af5c-611c-4d6b-85b7-d328111c37df" />
+
+
 # Portfolio - DotNew.me
 
 ## Overview
