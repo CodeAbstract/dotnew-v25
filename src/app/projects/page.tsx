@@ -119,7 +119,7 @@ export default function Projects() {
               <span className="text-xl font-bold text-gray-900">New Aguda</span>
             </div>
             <div className="hidden md:block text-sm text-gray-600 ml-4">
-              <span className="tracking-wider">/ SOFTWARE ENGINEER | RUBY ON RAILS | E-COMMERCE | AGILE</span>
+              <span className="tracking-wider">/ Software Engineer | Ruby on Rails | E-Commerce | Agile | Ai</span>
             </div>
           </div>
           <div className="flex items-center space-x-8">
@@ -128,14 +128,6 @@ export default function Projects() {
               className="text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium"
             >
               ABOUT
-            </Link>
-            <Link 
-              href="/projects" 
-              className={`text-gray-600 hover:text-gray-900 hover:line-through hover:decoration-[#0066FF] hover:decoration-2 text-sm font-medium ${
-                pathname === '/projects' ? 'line-through decoration-[#0066FF] decoration-2' : ''
-              }`}
-            >
-              PROJECTS
             </Link>
             <Link 
               href="/contact" 
